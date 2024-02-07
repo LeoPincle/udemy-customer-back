@@ -1,8 +1,8 @@
 name: build and test feature branch
 on:
-  pull_request:
-    branches: [ develop ]
-    types: [ opened, reopened ]
+  push:
+    branches:
+      - "feature/*"
 jobs: 
   build-feature:
     runs-on: ubuntu-latest
